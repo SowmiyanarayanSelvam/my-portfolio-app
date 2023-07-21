@@ -1,0 +1,260 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Set up a dark background */
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+/* CSS for the profile picture frame */
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #fff; /* You can customize the color */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto; /* Center the frame */
+  position: relative; /* To position the image inside the frame */
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%; /* To ensure the image stays within the circle */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+/* Apply spinning animation to ::after pseudo-element */
+.hero h1::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('../public/basketball.png'); /* Replace with the path to your basketball icon */
+  background-size: cover;
+  margin-left: 5px;
+  animation: spin 2s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+
+/* Style the header */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Style the About Me section */
+.about-me {
+  padding: 80px 0;
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Style the My Projects section */
+.projects {
+  padding: 80px 0;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Style the Contact Me section */
+.contact {
+  padding: 80px 0;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Style the footer */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Add some hacker-style elements */
+/* Feel free to customize these styles as per your preference */
+/* .hero h1::after {
+  content: "|";
+  animation: blink 1s infinite;
+} */
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero p {
+  font-family: 'Courier New', monospace;
+}
+
+.about-me {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.projects h2 {
+  font-family: 'Courier New', monospace;
+}
+
+.projects {
+  background-color: #0f0f0f;
+  padding: 60px 0;
+}
+
+.contact {
+  background-color: #000;
+  padding: 60px 0;
+}
+
+.footer {
+  background-color: #0f0f0f;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  filter: invert(100%);
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .about-me h2 {
+    font-size: 2rem;
+  }
+
+  .about-me p {
+    font-size: 1.1rem;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1.1rem;
+  }
+}
+
+/* CSS for the contact links */
+.contact-links {
+  display: flex;
+  justify-content: center; /* Align icons horizontally at the center */
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border-radius: 50%;
+  margin: 10px; /* Adjust the margin as needed */
+  background-color: #333; /* Add background color to the icons */
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Adjust the icon size as needed */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: #555; /* Adjust the hover background color */
+}
+
