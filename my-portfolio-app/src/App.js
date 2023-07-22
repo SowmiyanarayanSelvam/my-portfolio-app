@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       {/* Section 1: Home */}
-      <header className="hero">
+      <header className="hero" id='home'>
         <Container>
           <h1>Sowmiyanarayan Selvam</h1>
           <div className="profile-picture">
@@ -26,7 +26,7 @@ function App() {
         <Container>
           <ul>
             <li>
-              <a href="#hero">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
               <a href="#about-me">About Me</a>
@@ -34,12 +34,22 @@ function App() {
             <li>
               <a href="#projects">Projects</a>
             </li>
+            <li>
+              <a href="#blogs">Blogs</a>
+            </li>
+            <li>
+              {/* Download Resume button */}
+              <a href="/Selvam-Resume.pdf" download="Selvam-Resume.pdf" className="resume-button">
+              Resume
+            </a>
+            </li>
+
           </ul>
         </Container>
       </nav>
 
       {/* Section 2: About Me */}
-      <section className="about-me">
+      <section className="about-me" id='about-me'>
         <Container>
           <Row>
             <Col md={6}>
@@ -66,10 +76,67 @@ function App() {
       </section>
 
       {/* Section 3: My Projects */}
-      <section className="projects">
+      <section className="projects" id='projects'>
         <Container>
-          <h2>My Projects</h2>
-          {/* Add your project cards/grid here */}
+          <h2>Projects</h2>
+          <div className="project-grid">
+            <div className="project-slot">
+              <img src="project1.jpg" alt="Project 1" />
+              <h3>Project 1</h3>
+              <p>
+                Content for Project 1.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+               <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+            <div className="project-slot">
+              <img src="project1.jpg" alt="Project 1" />
+              <h3>Project 2</h3>
+              <p>
+              Content for Project 2.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+               <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+          </div>
+          <div className="project-grid">
+            <div className="project-slot">
+              <img src="project3.jpg" alt="Project 1" />
+              <h3>Project 3</h3>
+              <p>
+              Content for Project 3.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+               <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+            <div className="project-slot">
+              <img src="project1.jpg" alt="Project 1" />
+              <h3>Project 4</h3>
+              <p>
+              Content for Project 4.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+               <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+        {/* Section 4: Blog */}
+            <section className="blog" id="blogs">
+        <Container>
+          <h2>Blogs</h2>
+          <p>
+            Check out my latest blog post on Medium!
+            <br />
+            <a href="https://medium.com/@selvamsowmiyanarayan/the-science-behind-invisalign-for-dummies-by-a-dummy-6365feed50fe" target="_blank" rel="noopener noreferrer">
+              Read Now
+            </a>
+          </p>
         </Container>
       </section>
 
