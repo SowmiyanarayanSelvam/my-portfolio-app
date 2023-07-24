@@ -56,14 +56,14 @@ function App() {
               <h2>About Me</h2>
               <p>
               வணக்கம் 🙏🏽 or Hello! I'm a Computer Science graduate student at Rutgers New Brunswick. 
-              I had the incredible opportunity to intern at SPAN Technologies this summer. 
+              I had the opportunity to intern at SPAN Technologies this summer. 
               During my time there, I worked with the MERN stack. I was a part of the dev team
               building a tax prep app for TaxBandits. I contributed a mail scheduling module using Node.js,
               Express, AWS Lambda, AWS EventBridge Scheduler, AWS SQS, and AWS SES. I have taken a wide 
               range of courses at Rutgers, from Operating Systems to Socially Cognizant Robotics.<br /> When 
               I'm not in front of my laptop, you can find me on the court, cheering on the Lakers, 
-              vibing to some music, watching Luffy make his way to the one piece, or nerding out with my 
-              friends. <br /> I'm fascinated by how language evolves in computer science, becoming simple and 
+              vibing to some music, watching Luffy make his way to the One Piece, or nerding out with my 
+              friends. <br /> I'm fascinated by how Computer Science has started evolving into a language, becoming simple and 
               intricate simultaneously. Computer Science is not just a field of study but a powerful language 
               that can support and enhance any task, menial or grand. I am currently looking into 
               Robotic Process Automation (RPA) and its application to automate repetitive tasks like filling 
