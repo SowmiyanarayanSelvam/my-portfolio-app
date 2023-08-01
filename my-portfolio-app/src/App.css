@@ -127,7 +127,7 @@ body {
 }
 
 
-/* CSS for the project slots */
+/* CSS for the project slots and grids */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -145,6 +145,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .project-slot h3 {
@@ -157,27 +158,29 @@ body {
   margin-bottom: 15px;
 }
 
-.project-slot a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
+/* Styling for the slideshow */
+.slideshow-container {
+  display: flex;
+  overflow: hidden;
 }
 
-.project-slot a i {
-  margin-right: 5px;
+.slide {
+  max-width: 100%;
+  height: auto;
+  display: none;
 }
 
-/* Special styles for Project 2 */
-.project-slot.project-2 {
-  grid-column: span 2; /* Make this slot span 2 columns */
+.slide.active {
+  display: block;
 }
 
-.project-slot.project-2 img {
-  width: 45%; /* Adjust the width of the images to fit side by side */
-  margin: 5px;
+.slideshow-buttons {
+  margin-top: 10px;
 }
 
-
+.slideshow-buttons button {
+  border: none;
+}
 
 /* Style the Contact Me section */
 .contact {

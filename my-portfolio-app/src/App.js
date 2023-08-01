@@ -1,17 +1,26 @@
 // import logo from './logo.svg';
-import React from 'react';
+import React,{useState} from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import yourImage from '../src/SelvamS.jpg'
-import bidsy from '../src/projects/Bidsy.gif'
-import scr1 from '../src/projects/SCR-1.gif'
-import scr2 from '../src/projects/SCR-2.gif'
-import ems from '../src/projects/EMS.gif'
 
 function App() {
+
+  // Sample GIF URLs for the projects
+  const bidsyGifUrl = '../src/projects/Bidsy.gif';
+  const scrGifUrls = ['../src/projects/SCR-1.gif', '../src/projects/SCR-2.gif'];
+  const emsGifUrl = '../src/projects/EMS.gif';
+
+  // Slideshow state for SCR project
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Function to change the slide for SCR project
+  const changeSlide = (nextSlide) => {
+    setCurrentSlide(nextSlide);
+  };
 
   return (
     <div className="App">
@@ -80,58 +89,68 @@ function App() {
         </Container>
       </section>
 
-      {/* Section 3: My Projects */}
-      <section className="projects" id='projects'>
+            {/* Section 3: My Projects */}
+            <section className="projects" id="projects">
         <Container>
-          <h2>Projects</h2>
-
+          <h2>My Projects</h2>
           <div className="project-grid">
+            {/* Project 1: Bidsy */}
             <div className="project-slot">
-              <img src={bidsy} alt="Bidsy GIF" />
-              <h3>Bidsy</h3>
+              <img src={bidsyGifUrl} alt="Bidsy Project" />
+              <h3>Project 1: Bidsy</h3>
               <p>
-                Content for Project 1.
+                Bidsy is a project that does something amazing. It showcases the power of technology in a unique way.
               </p>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-               <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </div>
-            
-            <div className="project-slot project-2">
-                  <img src={scr1} alt="SCR GIF - 1" />
-                  <img src={scr2}  alt="SCR GIF - 2" />
-    
-              <h3>Project 2</h3>
-              <p>
-              Content for Project 2.
-              </p>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-               <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </div>
-          </div>
-
-          <div className="project-grid">
-            <div className="project-slot">
-              <img  src={ems} alt="EMS GIF" />
-              <h3>Elective Management System</h3>
-              <p>
-              Content for Project 3.
-              </p>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-               <FontAwesomeIcon icon={faGithub} />
-              </a>
             </div>
 
+            {/* Project 2: SCR */}
             <div className="project-slot">
-              <img src="project1.jpg" alt="Project 1" />
+              {/* Automatic Slideshow */}
+              <div className="slideshow">
+                <div className="slideshow-container">
+                  {scrGifUrls.map((url, index) => (
+                    <img
+                      key={index}
+                      src={url}
+                      alt={`Slide ${index + 1}`}
+                      className={index === currentSlide ? 'slide active' : 'slide'}
+                    />
+                  ))}
+                </div>
+                <div className="slideshow-buttons">
+                  <button onClick={() => changeSlide((currentSlide - 1 + scrGifUrls.length) % scrGifUrls.length)}>&lt;</button>
+                  <button onClick={() => changeSlide((currentSlide + 1) % scrGifUrls.length)}>&gt;</button>
+                </div>
+              </div>
+              <h3>Project 2: SCR</h3>
+              <p>
+                SCR is an awesome project that uses multiple GIFs in a slideshow to demonstrate its functionalities.
+              </p>
+            </div>
+
+            {/* Project 3: EMS */}
+            <div className="project-slot">
+              <img src={emsGifUrl} alt="EMS Project" />
+              <h3>Project 3: EMS</h3>
+              <p>
+                EMS is a cutting-edge project with a mesmerizing GIF that shows off its capabilities in action.
+              </p>
+            </div>
+
+            {/* Project 4 */}
+            <div className="project-slot dimmed">
+              <div className="typing-effect">
+                <span>In the workshop...</span>
+                <div className="dots-container">
+                  <div className="dot"></div>
+                  <div className="dot"></div>
+                  <div className="dot"></div>
+                </div>
+              </div>
               <h3>Project 4</h3>
               <p>
-              In the workshop ..
+                This project is still under development. Stay tuned for exciting updates!
               </p>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-               <FontAwesomeIcon icon={faGithub} />
-              </a>
             </div>
           </div>
         </Container>
