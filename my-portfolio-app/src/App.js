@@ -6,8 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import yourImage from '../src/SelvamS.jpg'
+import bidsy from '../src/projects/Bidsy.gif'
+import scr1 from '../src/projects/SCR-1.gif'
+import scr2 from '../src/projects/SCR-2.gif'
+import ems from '../src/projects/EMS.gif'
 
 function App() {
+
   return (
     <div className="App">
       {/* Section 1: Home */}
@@ -79,10 +84,11 @@ function App() {
       <section className="projects" id='projects'>
         <Container>
           <h2>Projects</h2>
+
           <div className="project-grid">
             <div className="project-slot">
-              <img src="project1.jpg" alt="Project 1" />
-              <h3>Project 1</h3>
+              <img src={bidsy} alt="Bidsy GIF" />
+              <h3>Bidsy</h3>
               <p>
                 Content for Project 1.
               </p>
@@ -90,8 +96,11 @@ function App() {
                <FontAwesomeIcon icon={faGithub} />
               </a>
             </div>
-            <div className="project-slot">
-              <img src="project1.jpg" alt="Project 1" />
+            
+            <div className="project-slot project-2">
+                  <img src={scr1} alt="SCR GIF - 1" />
+                  <img src={scr2}  alt="SCR GIF - 2" />
+    
               <h3>Project 2</h3>
               <p>
               Content for Project 2.
@@ -101,10 +110,11 @@ function App() {
               </a>
             </div>
           </div>
+
           <div className="project-grid">
             <div className="project-slot">
-              <img src="project3.jpg" alt="Project 1" />
-              <h3>Project 3</h3>
+              <img  src={ems} alt="EMS GIF" />
+              <h3>Elective Management System</h3>
               <p>
               Content for Project 3.
               </p>
@@ -112,11 +122,12 @@ function App() {
                <FontAwesomeIcon icon={faGithub} />
               </a>
             </div>
+
             <div className="project-slot">
               <img src="project1.jpg" alt="Project 1" />
               <h3>Project 4</h3>
               <p>
-              Content for Project 4.
+              In the workshop ..
               </p>
               <a href="#" target="_blank" rel="noopener noreferrer">
                <FontAwesomeIcon icon={faGithub} />
