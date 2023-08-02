@@ -142,8 +142,8 @@ body {
 }
 
 .project-slot img {
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  height: 50%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -202,13 +202,6 @@ body {
   text-align: center;
   padding: 40px 0;
 }
-
-/* Add some hacker-style elements */
-/* Feel free to customize these styles as per your preference */
-/* .hero h1::after {
-  content: "|";
-  animation: blink 1s infinite;
-} */
 
 @keyframes blink {
   0%, 100% {
