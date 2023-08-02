@@ -8,19 +8,10 @@ import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import yourImage from '../src/SelvamS.jpg'
 import bidsyGifUrl from '../src/projects/Bidsy.gif';
 import emsGifUrl from '../src/projects/EMS.gif';
+import scrGifUrl1 from  '../src/projects/SCR-1.gif';
+import scrGifUrl2 from '../src/projects/SCR-2.gif';
 
 function App() {
-
-    const scrGifUrls = ['../src/projects/SCR-1.gif', '../src/projects/SCR-2.gif'];
-
-    // Slideshow state for SCR project
-    const [currentSlide,
-        setCurrentSlide] = useState(0);
-
-    // Function to change the slide for SCR project
-    const changeSlide = (nextSlide) => {
-        setCurrentSlide(nextSlide);
-    };
 
     return (
         <div className="App">
@@ -43,7 +34,10 @@ function App() {
                             <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#about-me">About Me</a>
+                            <a href="#about-me">About</a>
+                        </li>
+                        <li>
+                            <a href="#education">Education</a>
                         </li>
                         <li>
                             <a href="#projects">Projects</a>
@@ -97,44 +91,48 @@ function App() {
                 </Container>
             </section>
 
-            {/* Section 3: My Projects */}
+                 {/* Section 3: Education */}
+                  <section className="education" id="education">
+                    <Container>
+                      <h2>Education</h2>
+                      <div className="education-item">
+                        <h3>Rutgers-New Brunswick</h3>
+                        <p>Degree: Master of Science</p>
+                        <p>Field of Study: Computer Science</p>
+                        <p>Period of Study: 2022 - 2024</p>
+                        <p>GPA: 3.83/4.0</p>
+                      </div>
+                      <div className="education-item">
+                        <h3>Amrita Vishwa Vidyapeetham</h3>
+                        <p>Degree: Bachelors of Technology</p>
+                        <p>Field of Study: Computer Science</p>
+                        <p>Period of Study: 2018 - 2022</p>
+                        <p>GPA: 3.5/4.0</p>
+                      </div>
+                    </Container>
+                  </section>
+
+            {/* Section 4: My Projects */}
             <section className="projects" id="projects">
                 <Container>
-                    <h2>My Projects</h2>
+                    <h2>Projects</h2>
                     <div className="project-grid">
                         {/* Project 1: Bidsy */}
                         <div className="project-slot">
                             <img src={bidsyGifUrl} alt="Bidsy Project"/>
                             <h3>Project 1: Bidsy</h3>
                             <p>
-                                Bidsy is a project that does something amazing. It showcases the power of
-                                technology in a unique way.
+                                Bidsy is an automated online auction system.
                             </p>
                         </div>
 
                         {/* Project 2: SCR */}
-                        <div className="project-slot">
-                            {/* Automatic Slideshow */}
-                            <div className="slideshow">
-                                <div className="slideshow-container">
-                                    {scrGifUrls.map((url, index) => (<img
-                                        key={index}
-                                        src={url}
-                                        alt={`Slide ${index + 1}`}
-                                        className={index === currentSlide
-                                        ? 'slide active'
-                                        : 'slide'}/>))}
-                                </div>
-                                <div className="slideshow-buttons">
-                                    <button
-                                        onClick={() => changeSlide((currentSlide - 1 + scrGifUrls.length) % scrGifUrls.length)}>&lt;</button>
-                                    <button onClick={() => changeSlide((currentSlide + 1) % scrGifUrls.length)}>&gt;</button>
-                                </div>
-                            </div>
+                        <div className="project-slot-double">
+                          <img src={scrGifUrl1} alt="SCR 1" />
+                          <img src={scrGifUrl2} alt="SCR 2" />
                             <h3>Project 2: SCR</h3>
                             <p>
-                                SCR is an awesome project that uses multiple GIFs in a slideshow to demonstrate
-                                its functionalities.
+                                This project has two parts.
                             </p>
                         </div>
 
@@ -148,41 +146,34 @@ function App() {
                             </p>
                         </div>
 
-                        {/* Project 4 */}
-                        <div className="project-slot dimmed">
-                            <div className="typing-effect">
-                                <span>In the workshop...</span>
-                                <div className="dots-container">
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                </div>
-                            </div>
-                            <h3>Project 4</h3>
-                            <p>
-                                This project is still under development. Stay tuned for exciting updates!
-                            </p>
+                       {/* Project 4: Job Application Tracker */}
+                      <div className="project-slot dimmed">
+                        <div className="typing-effect">
+                          In the workshop
                         </div>
+                        <h3>Project 4: Job Application Tracker</h3>
+                        <p> Project 4 Description</p>
+                      </div>
                     </div>
-                </Container>
-            </section>
+                  </Container>
+                </section>
 
-            {/* Section 4: Blog */}
-            <section className="blog" id="blogs">
-                <Container>
-                    <h2>Blogs</h2>
-                    <p>
-                        Check out my latest blog post on Medium!
-                        <br/>
-                        <a
-                            href="https://medium.com/@selvamsowmiyanarayan/the-science-behind-invisalign-for-dummies-by-a-dummy-6365feed50fe"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            Read Now
-                        </a>
-                    </p>
-                </Container>
-            </section>
+                      {/* Section 5: Blog */}
+                      <section className="blog" id="blogs">
+                          <Container>
+                              <h2>Blogs</h2>
+                              <p>
+                                  Check out my latest blog post on Medium!
+                                  <br/>
+                                  <a
+                                      href="https://medium.com/@selvamsowmiyanarayan/the-science-behind-invisalign-for-dummies-by-a-dummy-6365feed50fe"
+                                      target="_blank"
+                                      rel="noopener noreferrer">
+                                      Read Now
+                                  </a>
+                              </p>
+                            </Container>
+                      </section>
 
             {/* Footer */}
             <footer className="footer">
