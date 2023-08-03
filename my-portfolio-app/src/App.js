@@ -122,7 +122,14 @@ function App() {
                             <img src={bidsyGifUrl} alt="Bidsy Project"/>
                             <h3>Project 1: Bidsy</h3>
                             <p>
-                                Bidsy is an automated online auction system.
+                            
+                            This website operates with automated bidding, setting up auctions for items
+                            spanning various categories. Bids can be manual or automatic, and buyers have
+                            the option to receive notifications if they are outbid. The marketplace offers
+                            sorting and searching algorithms for buyers to explore and find items.
+                            Sellers can list their items on the shared marketplace, specifying a lower
+                            and upper price along with the bid expiration time.
+                        
                             </p>
                         </div>
 
@@ -132,7 +139,13 @@ function App() {
                           <img src={scrGifUrl2} alt="SCR 2" />
                             <h3>Project 2: SCR</h3>
                             <p>
-                                This project has two parts.
+                            The focus of this academic project revolved around facilitating a robot to 
+                            successfully navigate to its destination while prioritizing collision avoidance. 
+                            The project was split into two segments. In the initial phase, the 
+                            robot's objective was to travel through a narrow pathway to reach its destination, 
+                            contending with an obstacle positioned on the opposite side of the path. The
+                             subsequent phase involved the robot accompanying its owner through a congested 
+                             room while being in the amidst of other humans and avoiding collisions with them.
                             </p>
                         </div>
 
@@ -141,8 +154,17 @@ function App() {
                             <img src={emsGifUrl} alt="EMS Project"/>
                             <h3>Project 3: EMS</h3>
                             <p>
-                                EMS is a cutting-edge project with a mesmerizing GIF that shows off its
-                                capabilities in action.
+                            The Elective Management System (EMS) was developed as replacement for
+                            the existing system employed within my undergraduate university. It 
+                            streamlined and expedited the laborious process. EMS demonstrated a
+                            consideration for individual elective preferences of each student 
+                            and executed a meticulous allocation of electives.<br />
+                            This allocation was executed on the basis of a "first come, first serve" principle,
+                            wherein the course's available capacity was primary. In cases where
+                            the course capacity was fulfilled, students were automatically assigned their
+                            next preferred elective choice. Furthermore, EMS facilitated subsequent 
+                            transfers between elective options, automatically accommodating any surplus 
+                            slots within its algorithmic framework.
                             </p>
                         </div>
 
@@ -152,7 +174,7 @@ function App() {
                           In the workshop
                         </div>
                         <h3>Project 4: Job Application Tracker</h3>
-                        <p> Project 4 Description</p>
+                        <p> Project to keep track of the job applicaiton statuse by reading the mail updated sent by companies to the gmail inbox using a gmail API.</p>
                       </div>
                     </div>
                   </Container>
