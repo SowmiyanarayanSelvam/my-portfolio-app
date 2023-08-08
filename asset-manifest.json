@@ -1,21 +1,21 @@
 {
-  "files": {
-    "main.css": "/static/css/main.1b0931b8.css",
-    "main.js": "/static/js/main.9ceaffd0.js",
-    "static/js/787.3c86a6c9.chunk.js": "/static/js/787.3c86a6c9.chunk.js",
-    "static/media/SCR-2.gif": "/static/media/SCR-2.1bf4b8ab39b7599d9fab.gif",
-    "static/media/SCR-1.gif": "/static/media/SCR-1.75407a80f3f2e3dff46a.gif",
-    "static/media/EMS.gif": "/static/media/EMS.2984ff125b6f0e683d7a.gif",
-    "static/media/Bidsy.gif": "/static/media/Bidsy.6dcab7f53a2c4d9a4efa.gif",
-    "static/media/SelvamS.jpg": "/static/media/SelvamS.bab2baf6018f666d69d4.jpg",
-    "static/media/basketball.png": "/static/media/basketball.a0b5075d90d2726600a3.png",
-    "index.html": "/index.html",
-    "main.1b0931b8.css.map": "/static/css/main.1b0931b8.css.map",
-    "main.9ceaffd0.js.map": "/static/js/main.9ceaffd0.js.map",
-    "787.3c86a6c9.chunk.js.map": "/static/js/787.3c86a6c9.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.1b0931b8.css",
-    "static/js/main.9ceaffd0.js"
-  ]
+  "main.css": "/static/css/main.04c8a386.chunk.css",
+  "main.js": "/static/js/main.f51f5b93.chunk.js",
+  "main.js.map": "/static/js/main.f51f5b93.chunk.js.map",
+  "static/js/1.a89266de.chunk.js": "/static/js/1.a89266de.chunk.js",
+  "static/js/1.a89266de.chunk.js.map": "/static/js/1.a89266de.chunk.js.map",
+  "static/js/2.924df6eb.chunk.js": "/static/js/2.924df6eb.chunk.js",
+  "static/js/2.924df6eb.chunk.js.map": "/static/js/2.924df6eb.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.7f2d4e2d.js",
+  "runtime~main.js.map": "/static/js/runtime~main.7f2d4e2d.js.map",
+  "static/media/SelvamS.jpg": "/static/media/SelvamS.319cdf25.jpg",
+  "static/media/Bidsy.gif": "/static/media/Bidsy.625d350e.gif",
+  "static/media/EMS.gif": "/static/media/EMS.8eee7309.gif",
+  "static/media/SCR-1.gif": "/static/media/SCR-1.f68544e1.gif",
+  "static/media/SCR-2.gif": "/static/media/SCR-2.5cbb5eb0.gif",
+  "static/media/App.css": "/static/media/basketball.75448fe3.png",
+  "static/css/main.04c8a386.chunk.css.map": "/static/css/main.04c8a386.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.0ae459e7c7d357db7801fb3cefa36708.js": "/precache-manifest.0ae459e7c7d357db7801fb3cefa36708.js",
+  "service-worker.js": "/service-worker.js"
 }
