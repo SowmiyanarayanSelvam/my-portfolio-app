@@ -79,7 +79,7 @@ function App() {
             <Col md={6} className="text-center text-md-left">
               <h2>About Me</h2>
               <p>
-                வணக்கம் 🙏🏽 or Hello! I'm a Computer Science graduate student at
+                வணக்கம்<span role="img" >🙏🏽</span>or Hello! I'm a Computer Science graduate student at
                 Rutgers New Brunswick. I had the opportunity to intern at SPAN
                 Technologies this summer. During my time there, I worked with
                 the MERN stack. I was a part of the dev team building a tax prep
