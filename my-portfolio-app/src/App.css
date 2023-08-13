@@ -75,8 +75,6 @@ body {
   left: 0;
 }
 
-
-
 /* Apply spinning animation to ::after pseudo-element */
 .hero h1::after {
   content: "";
@@ -88,7 +86,6 @@ body {
   margin-left: 5px;
   animation: spin 2s linear infinite; /* Adjust the duration and timing function as needed */
 }
-
 
 /* Style the header */
 .hero {
