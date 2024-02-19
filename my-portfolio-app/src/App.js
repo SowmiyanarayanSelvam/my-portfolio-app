@@ -7,9 +7,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import yourImage from "../src/SelvamS.jpg";
 import bidsyGifUrl from "../src/projects/Bidsy.gif";
-import emsGifUrl from "../src/projects/EMS.gif";
 import scrGifUrl1 from "../src/projects/SCR-1.gif";
 import scrGifUrl2 from "../src/projects/SCR-2.gif";
+import ARGifUrl from "../src/projects/AR.gif";
 
 function App() {
   return (
@@ -79,14 +79,15 @@ function App() {
             <Col md={6} className="text-center text-md-left">
               <h2>About Me</h2>
               <p>
-                வணக்கம்<span role="img" >🙏🏽</span>or Hello! I'm a Computer Science graduate student at
+                வணக்கம்<span role="img" >🙏🏽</span>or Hello! I'm a Comp Sci grad student at
                 Rutgers New Brunswick. I had the opportunity to intern at SPAN
                 Technologies this summer. During my time there, I worked with
                 the MERN stack. I was a part of the dev team building a tax prep
                 app for TaxBandits. I contributed a mail scheduling module using
                 Node.js, Express, AWS Lambda, AWS EventBridge Scheduler, AWS
                 SQS, and AWS SES. I have taken a wide range of courses at
-                Rutgers, from Operating Systems to Socially Cognizant Robotics.
+                Rutgers, from Operating Systems to Advanced Robotics. 
+                I am a Course Assistant for CS211 Software Methodologies too!
                 <br />
                 When I'm not in front of my laptop, you can find me on the
                 court, cheering on the Lakers, vibing to some music, watching
@@ -97,11 +98,9 @@ function App() {
                 a language, becoming simple and intricate simultaneously.
                 Computer Science is not just a field of study but a powerful
                 language that can support and enhance any task, menial or grand.
-                I am currently looking into Robotic Process Automation (RPA) and
-                its application to automate repetitive tasks like filling out
-                forms. I'm excited to continue my journey as a software
-                engineer, creating solutions and pushing the boundaries of what
-                I could achieve with the technologies I have learned.
+                I'm excited to continue my journey as a software engineer, creating 
+                solutions and pushing the boundaries of what I could achieve with the 
+                technologies I have learned.
               </p>
             </Col>
           </Row>
@@ -118,7 +117,7 @@ function App() {
               <p>Degree: Master of Science</p>
               <p>Field of Study: Computer Science</p>
               <p>Period of Study: 2022 - 2024</p>
-              <p>GPA: 3.83/4.0</p>
+              <p>GPA: 3.78/4.0</p>
             </div>
             <div className="education-item">
               <h3>Amrita Vishwa Vidyapeetham</h3>
@@ -136,10 +135,29 @@ function App() {
         <Container>
           <h2 className="text-center">Projects</h2>
           <div className="project-grid">
-            {/* Project 1: Bidsy */}
+
+            {/* Project 1: Advanced Robotics */}
+            <div className="col-md-6 offset-md-3 project-slot double">
+            <img src={ARGifUrl} alt="AR Project" />
+              <h3>Project : Legged Robot Locomotion</h3>
+              <p>
+              the task of remodeling a Neural Network policy for a quadruped robot,
+              employing Python, PyTorch, Tensorflow, and Isaac Gym. The primary goal
+              was to train the robot for autonomous hallway navigation using Actor-Critic 
+              and Proximal Policy Optimization algorithms. The project featured the 
+              development of a sophisticated reward function, guiding the robot to 
+              reach goals while avoiding collisions with walls and obstacles. The 
+              successful outcome demonstrated the robot's ability to autonomously 
+              interpret its surroundings, make informed decisions, and achieve predefined 
+              goals. This project not only showcases technical proficiency but also highlights
+              the application of cutting-edge technologies in advancing legged robot locomotion.
+              </p>
+            </div>
+
+            {/* Project 2: Bidsy */}
             <div className="col-md-6 offset-md-3 project-slot">
               <img src={bidsyGifUrl} alt="Bidsy Project" />
-              <h3>Project 1: Bidsy</h3>
+              <h3>Project 2: Bidsy</h3>
               <p>
                 This website operates with automated bidding, setting up
                 auctions for items spanning various categories. Bids can be
@@ -152,11 +170,15 @@ function App() {
               </p>
             </div>
 
-            {/* Project 2: SCR */}
+            
+          </div>
+
+          <div className="project-grid">
+            {/* Project 3: SCR */}
             <div className="col-md-6 offset-md-3 project-slot double">
               <img src={scrGifUrl1} alt="SCR 1" />
               <img src={scrGifUrl2} alt="SCR 2" />
-              <h3>Project 2: SCR</h3>
+              <h3>Project 3: Collision Avoidance</h3>
               <p>
                 The focus of this academic project revolved around facilitating
                 a robot to successfully navigate to its destination while
@@ -169,11 +191,23 @@ function App() {
                 other humans and avoiding collisions with them.
               </p>
             </div>
+
+            Project 4: Job Application Tracker
+            <div className="col-md-6 offset-md-3 project-slot dimmed">
+              <div className="typing-effect">In the workshop</div>
+              <h3>Project 4: Job Application Tracker</h3>
+              <p>
+                {" "}
+                Project to keep track of the job applicaiton statuse by reading
+                the mail updated sent by companies to the gmail inbox using a
+                gmail API.
+              </p>
+            </div>
           </div>
 
-          <div className="project-grid">
+          {/* <div className="project-grid">
             {/* Project 3: EMS */}
-            <div className="col-md-6 offset-md-3 project-slot">
+            {/* <div className="col-md-6 offset-md-3 project-slot">
               <img src={emsGifUrl} alt="EMS Project" />
               <h3>Project 3: EMS</h3>
               <p>
@@ -192,10 +226,10 @@ function App() {
                 transfers between elective options, automatically accommodating
                 any surplus slots within its algorithmic framework.
               </p>
-            </div>
+            </div> */}
 
             {/* Project 4: Job Application Tracker */}
-            <div className="col-md-6 offset-md-3 project-slot dimmed">
+            {/* <div className="col-md-6 offset-md-3 project-slot dimmed">
               <div className="typing-effect">In the workshop</div>
               <h3>Project 4: Job Application Tracker</h3>
               <p>
@@ -204,8 +238,8 @@ function App() {
                 the mail updated sent by companies to the gmail inbox using a
                 gmail API.
               </p>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </Container>
       </section>
 
