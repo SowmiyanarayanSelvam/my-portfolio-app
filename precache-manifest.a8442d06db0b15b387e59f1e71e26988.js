@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c997f7b5893f2c702569",
+    "revision": "0e3e097f041c0aae151d",
     "url": "/static/css/main.601055ac.chunk.css"
   },
   {
-    "revision": "c997f7b5893f2c702569",
-    "url": "/static/js/main.581f2ce3.chunk.js"
+    "revision": "0e3e097f041c0aae151d",
+    "url": "/static/js/main.0ceeb921.chunk.js"
   },
   {
     "revision": "e907979936b934d524bc",
@@ -20,16 +20,12 @@ self.__precacheManifest = [
     "url": "/static/js/3.1e9de0c8.chunk.js"
   },
   {
-    "revision": "319cdf251fba1d8e697d084a81b2fc16",
-    "url": "/static/media/SelvamS.319cdf25.jpg"
+    "revision": "71ab4afcf13f2369632f43a004635d15",
+    "url": "/static/media/Sowmi2.71ab4afc.jpeg"
   },
   {
     "revision": "625d350e16165a1ab3d6fb367261439b",
     "url": "/static/media/Bidsy.625d350e.gif"
-  },
-  {
-    "revision": "8eee73092f227598622e789bc570a7c9",
-    "url": "/static/media/EMS.8eee7309.gif"
   },
   {
     "revision": "f68544e13a460b07d9f705edc7aceb59",
@@ -40,11 +36,15 @@ self.__precacheManifest = [
     "url": "/static/media/SCR-2.5cbb5eb0.gif"
   },
   {
+    "revision": "ccc30c948cf0a09fe12777933f228849",
+    "url": "/static/media/AR.ccc30c94.gif"
+  },
+  {
     "revision": "75448fe3df7e3711a8f6ceee95f093ac",
     "url": "/static/media/basketball.75448fe3.png"
   },
   {
-    "revision": "65c81f57ac4f8499a1329f06863eec7d",
+    "revision": "147b80a0d93c41fb15dc0cc09fca31f9",
     "url": "/index.html"
   }
 ];
