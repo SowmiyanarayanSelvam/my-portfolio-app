@@ -5,7 +5,8 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import yourImage from "../src/SelvamS.jpg";
+// import yourImage from "../src/SelvamS.jpg";
+import yourImage from "../src/Sowmi2.jpeg";
 import bidsyGifUrl from "../src/projects/Bidsy.gif";
 import scrGifUrl1 from "../src/projects/SCR-1.gif";
 import scrGifUrl2 from "../src/projects/SCR-2.gif";
@@ -141,16 +142,12 @@ function App() {
             <img src={ARGifUrl} alt="AR Project" />
               <h3>Project : Legged Robot Locomotion</h3>
               <p>
-              the task of remodeling a Neural Network policy for a quadruped robot,
+              Tasked with building a Neural Network policy for a quadruped robot,
               employing Python, PyTorch, Tensorflow, and Isaac Gym. The primary goal
               was to train the robot for autonomous hallway navigation using Actor-Critic 
               and Proximal Policy Optimization algorithms. The project featured the 
               development of a sophisticated reward function, guiding the robot to 
-              reach goals while avoiding collisions with walls and obstacles. The 
-              successful outcome demonstrated the robot's ability to autonomously 
-              interpret its surroundings, make informed decisions, and achieve predefined 
-              goals. This project not only showcases technical proficiency but also highlights
-              the application of cutting-edge technologies in advancing legged robot locomotion.
+              reach goals while avoiding collisions with walls and obstacles.
               </p>
             </div>
 
@@ -192,7 +189,7 @@ function App() {
               </p>
             </div>
 
-            Project 4: Job Application Tracker
+            {/* Project 4: Job Application Tracker */}
             <div className="col-md-6 offset-md-3 project-slot dimmed">
               <div className="typing-effect">In the workshop</div>
               <h3>Project 4: Job Application Tracker</h3>
@@ -285,6 +282,7 @@ function App() {
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
+          <p>Last Updated on: Feb 19 2024</p>
         </Container>
       </footer>
     </div>
