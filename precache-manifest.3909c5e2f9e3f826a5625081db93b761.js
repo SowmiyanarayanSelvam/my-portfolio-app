@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8869dfe423ec3c1565bd",
+    "revision": "24906ffae6ff44c0d2ae",
     "url": "/static/css/main.dc69f081.chunk.css"
   },
   {
-    "revision": "8869dfe423ec3c1565bd",
-    "url": "/static/js/main.0ceeb921.chunk.js"
+    "revision": "24906ffae6ff44c0d2ae",
+    "url": "/static/js/main.dea82ac0.chunk.js"
   },
   {
     "revision": "e907979936b934d524bc",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/media/basketball.75448fe3.png"
   },
   {
-    "revision": "c813168b9b230fbb70d5a8716f5648f8",
+    "revision": "bd26e35ce5263b728132b12962c2d4e4",
     "url": "/index.html"
   }
 ];
