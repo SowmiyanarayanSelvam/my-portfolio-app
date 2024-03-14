@@ -282,7 +282,7 @@ function App() {
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
-          <p>Last Updated on: Feb 19 2024</p>
+          {/* <p>Last Updated on: Feb 19 2024</p> */}
         </Container>
       </footer>
     </div>
